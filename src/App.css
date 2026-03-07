@@ -1,0 +1,238 @@
+/* Navbar   -------> NAV BAR*/
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 60px;
+  background: #0B6B43;
+  color:white;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:bold;
+}
+
+.nav-btn{
+    text-decoration:none;
+    color:white;
+    background-color: #ed4e18;
+    padding:10px 20px;
+    margin-right:10px;
+    border-radius:5px;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.nav-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+/* Hero Section --------> HERO SECTION*/ 
+
+.hero{
+  text-align:center;
+  padding:120px 20px;
+  background:linear-gradient(135deg,#2563eb,#1e3a8a);
+  color:white;
+}
+.hero {
+  background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("https://scontent.fhyd5-2.fna.fbcdn.net/v/t39.30808-6/509362214_122164280330515230_3534281580932338650_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=101&ccb=1-7&_nc_sid=2a1932&_nc_ohc=W4_W6Xc_h9wQ7kNvwEzj69r&_nc_oc=AdmQ-VwDiKZn8_V8zi41kcgECGLr5pWqqePsTHge3M80TGQ1W9lhcPIX1VTzuR34_d4&_nc_zt=23&_nc_ht=scontent.fhyd5-2.fna&_nc_gid=1Ix-4TyRmCqn8W6kQAFdLw&_nc_ss=8&oh=00_AfyB00s5vErdVEQtVagkK8xcUVKg5-tpBa3llBY2k0jnLw&oe=69B1CA9F");
+
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+}
+
+.hero h1{
+  font-size:42px;
+}
+
+.hero button{
+  margin-top:20px;
+  padding:12px 25px;
+  border:none;
+  background:white;
+  color:#1e3a8a;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f6f9;
+}
+
+/* section */
+
+/* -------FEATURES */
+
+.features{
+    text-align:center;
+    padding:80px 40px;
+}
+
+.features h1{
+    font-size:36px;
+    margin-bottom:50px;
+    text-align:center;
+}
+
+/* container */
+
+.features-container{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+}
+
+/* cards */
+
+.feature-card{
+    background:white;
+    width:260px;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+/* hover */
+
+.feature-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* icon */
+
+.icon{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+/* text */
+
+.feature-card h2{
+    margin-bottom:10px;
+}
+
+.feature-card p{
+    color:#666;
+}
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f6f9;
+}
+
+/* section */
+
+/* ---------EVENT */
+
+.events{
+    text-align:center;
+    padding:60px;
+}
+
+.event-btn {
+  padding: auto;
+}
+
+.events h1{
+    font-size:36px;
+    margin-bottom:40px;
+}
+
+/* cards layout */
+
+.event-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+}
+
+/* event card */
+
+.event-card{
+    background:white;
+    width:260px;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+/* hover effect */
+
+.event-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 12px 30px rgba(0,0,0,0.2);
+}
+
+/* text */
+
+.event-card h2{
+    margin-bottom:10px;
+}
+
+.event-card p{
+    color:#666;
+    margin-bottom:20px;
+}
+
+/* button */
+
+.event-card button{
+    background:#3b6df6;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.event-card button:hover{
+    background:#254edb;
+}
+
+
+/* Footer -----> FOOTER*/
+
+.footer{
+  background:#1e293b;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+
+
+/* --------->. ADMIN */
+/* .dashboard{
+  background-color:#f4f6f9;
+  min-height:100vh;
+  padding:40px;
+}
+
+.dashboard h1{
+  color:#333;
+}
+
+.dash-card{
+  background:rgb(79, 106, 160);
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  margin:20px;
+} */
