@@ -1,49 +1,94 @@
-// import "./App.css";
-// import Navbar from "./components/Navbar";
-// import Hero from "./components/Hero";
-// import Features from "./components/Features";
-// import Events from "./components/Events";
-// import Footer from "./components/Footer";
+// // import "./App.css";
+// // import Navbar from "./components/Navbar";
+// // import Hero from "./components/Hero";
+// // import Features from "./components/Features";
+// // import Events from "./components/Events";
+// // import Footer from "./components/Footer";
+
+// // function App() {
+// //   return (
+// //     <div>
+
+// //       <Navbar />
+// //       <Hero />
+// //       <Features />
+// //       <Events />
+// //       <Footer />
+
+// //     </div>
+// //   );
+// // }
+
+// // export default App;
+// // import "./App.css";
+// // import Navbar from "./components/Navbar";
+// // import Hero from "./components/Hero";
+// // import Features from "./components/Features";
+// // import Events from "./components/Events";
+// // import Footer from "./components/Footer";
+// // import Login from './components/Login';
+
+// // import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+
+
+// // function App(){
+// //   return (
+// //     <Router>
+// //       <Navbar title="Text Analyzer"/>
+// //       <Routes>
+// //         <Route path="/login" element={<Login/>}/>
+// //       </Routes>
+// //     </Router>
+// //   );
+// // }
+
+// // export default App;
+
+
+// import './App.css';
+// import Navbar from './components/Navbar';
+// import Hero from './components/Hero';
+// import Features from './components/Features';
+// import Events from './components/Events';
+// import Footer from './components/Footer';
+// import Login from './components/Login';
+// import Register from './components/Register';
+// import Event from './components/Event';
+// import Dashboard from './components/Dashboard';
+
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // function App() {
 //   return (
-//     <div>
+//     <Router>
 
 //       <Navbar />
-//       <Hero />
-//       <Features />
-//       <Events />
+
+//       <Routes>
+
+//         {/* Home Page */}
+//         <Route path="/" element={
+//           <div>
+//             <Hero />
+//             <Features />
+//             <Events/>
+//           </div>
+//         } />
+
+//         {/* Login Page */}
+//         <Route path="/event" element={<Event />} />
+//         <Route path="/login" element={<Login />} />
+//         <Route path="/register" element={<Register />} />
+//         <Route path="/dashboard" element={<Dashboard />} />
+//       </Routes>
+
 //       <Footer />
 
-//     </div>
-//   );
-// }
-
-// export default App;
-// import "./App.css";
-// import Navbar from "./components/Navbar";
-// import Hero from "./components/Hero";
-// import Features from "./components/Features";
-// import Events from "./components/Events";
-// import Footer from "./components/Footer";
-// import Login from './components/Login';
-
-// import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-
-
-// function App(){
-//   return (
-//     <Router>
-//       <Navbar title="Text Analyzer"/>
-//       <Routes>
-//         <Route path="/login" element={<Login/>}/>
-//       </Routes>
 //     </Router>
 //   );
 // }
 
 // export default App;
-
 
 import './App.css';
 import Navbar from './components/Navbar';
@@ -59,33 +104,36 @@ import Dashboard from './components/Dashboard';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
-  return (
-    <Router>
+return ( <Router>
 
-      <Navbar />
+  <Routes>
 
-      <Routes>
+    {/* Home Page */}
+    <Route path="/" element={
+      <>
+        <Navbar />
+        <Hero />
+        <Features />
+        <Events />
+        <Footer />
+      </>
+    } />
 
-        {/* Home Page */}
-        <Route path="/" element={
-          <div>
-            <Hero />
-            <Features />
-            <Events/>
-          </div>
-        } />
+    {/* Event Page (No Home Navbar) */}
+    <Route path="/event" element={<Event />} />
 
-        {/* Login Page */}
-        <Route path="/event" element={<Event />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-      </Routes>
+    {/* Auth Pages */}
+    <Route path="/login" element={<Login />} />
+    <Route path="/register" element={<Register />} />
 
-      <Footer />
+    {/* Dashboard */}
+    <Route path="/dashboard" element={<Dashboard />} />
 
-    </Router>
-  );
+  </Routes>
+
+</Router>
+
+);
 }
 
 export default App;
